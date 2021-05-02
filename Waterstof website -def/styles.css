@@ -1,0 +1,312 @@
+body {
+    font-family: 'Roboto', serif;
+    color: #686d6d;
+    width: 100%;
+}
+
+/* FONTS */
+
+h1 {
+    font-weight: 600;  
+    margin: 50px 0;
+    font-size:35px;
+}
+
+h2 {
+    font-weight: 600;  
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+h3 {
+    font-weight: 600;  
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+p {
+    line-height: 1.75;
+}
+
+a {
+    color: #00CCFF ;
+}
+
+hr {
+    border-color: #00CCFF;
+    margin: 50px auto;
+    border-style: dotted none none;
+    border-width: 12px;
+    width: 4%;
+}
+
+
+/* NAVIGATIE */
+
+ul {
+    list-style: none;
+    
+}
+
+.menu {
+    text-decoration: none;
+
+
+}
+
+.menu-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-inline: -25px 0px;
+    margin-top: 5px;   
+}
+
+.menu-link {
+    text-decoration: none;
+    color: grey;
+    align-items: center;
+    margin-right: 200px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.menu-link:hover {
+    color: #00CCFF;
+}
+
+/* DESIGN */
+
+.container-head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+
+    
+}
+.container {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.top-container-header {
+    background-image: url("images/Waterstof\ wat\ is\ dat\ \(2\).gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+
+}
+.inner-container-header {
+    width: 100%;
+
+}
+.header-img {
+    height: 250px;
+    
+}
+.product-img {
+    width: 400px;
+    height: 250px;
+    border-radius: 15px 50px; 
+    margin-bottom: 10px;
+}
+.persoon-img {
+    border-radius: 100%
+
+}
+.middle-container {
+    margin-top: 100px;
+    
+}
+.waterstof {
+    margin-bottom: 45px;
+    padding: 0 50px;
+    border-radius: 50px; 
+}
+
+.persoon {
+    background-color: #eeeeeefd;
+    padding: 20px;
+    margin-bottom: 45px;
+    padding: 0 50px;
+    border-radius: 50px; 
+}
+
+.waterstof-products {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #00CCFF;
+    padding: 20px 40px;
+    color: #00CCFF;
+    font-weight: bold;
+    background-color: #ffffff;
+    background-image: url(images/pijl_button.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.waterstof-products:hover {
+    color: #000000;
+
+}
+
+footer {
+    background-color: #00CCFF;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 50px;
+    width: auto;
+}
+    
+.footer-menu {
+    padding: 5px 0px; 
+    width: 100%;
+    color: #ffffff ;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    
+}
+
+.footer-menu-link:hover {
+    color: #000000;
+}
+
+
+/* FORM */
+
+input {
+    height: 50px;
+}
+
+.form-item {
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    background: transparent;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    color: grey;
+
+}
+.form-text {
+    width: 50%;
+    border: 2px solid grey;
+    background: transparent;
+    margin-left: 22px;
+    font-size: 18px;
+    margin-bottom: -25px;
+
+}
+.form-button {
+    border-radius: 10px;
+    border: 2px solid #00CCFF;
+    padding: 10px 40px;
+    color: #00CCFF;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ffffff;
+    background-image: url(images/pijl_button.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 30px 0px 0px 200px ;
+
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/* DESK */
+@media (min-width: 1000px) {
+  
+    .menu-item {
+        display: inline-block;
+        margin-inline: 50px 30px;
+        margin-top: 25px; 
+}
+
+    .menu-link {
+        text-decoration: none;
+        color: grey;
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: 20px;
+}
+
+    .menu-link:hover {
+        color: #00CCFF;
+}
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .inner-container-header {
+        width: 100%;
+    }
+    .header-img {
+        height: 250px;
+        padding-right: 1200px ;
+    }
+    .middle-container-waterstof {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 25px;
+    }
+
+    .bottom-container-persoon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+    }
+
+    header {
+        display: grid;
+        grid-auto-flow: column;
+       
+    }
+    .form-button {
+        margin: 30px 0px 0px 650px ;
+    
+    }
+
+    footer {
+        text-align: center;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+    .footer-menu {
+        display: inline-block;
+        padding: 10px 50px; 
+        width: 100%;
+        text-align: left;
+        color: #ffffff ;
+        font-weight: 700;
+    }
+}
+    
+
